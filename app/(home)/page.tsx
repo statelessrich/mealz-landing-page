@@ -221,7 +221,7 @@ function FAQ() {
       {/* contact info */}
       <div className="text-center mt-[30px] md:mt-[80px]">
         <span className="text-black text-xs font-light md:text-xl md:font-normal">
-          Got another question? We're here to help!
+          {`Got another question? We're here to help!`}
           <br />
           Email us at{" "}
         </span>
