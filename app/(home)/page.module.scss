@@ -1,0 +1,68 @@
+.download {
+  // Styles for the md breakpoint size
+  @media (min-width: 768px) {
+    background-size: 100% 100%;
+  }
+
+  .features li {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    position: relative;
+    align-self: flex-start;
+    min-height: 32px;
+
+    img {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      @apply md:w-[24.2px] md:h-[24.2px];
+    }
+  }
+
+  .phoneIcon {
+    @apply md:w-[218px] md:h-[441px];
+  }
+}
+
+.join {
+  background-position: 109% 19%;
+  background-size: 161px;
+
+  // Styles for the md breakpoint size
+  @media (min-width: 768px) {
+    background-size: 358px;
+    background-position: 88% 36%;
+  }
+
+  .links {
+    a {
+      @apply rounded-2xl bg-white flex items-center h-[90px] text-2xl p-[20px];
+      @apply md:flex-col md:h-[274px] md:w-[246px] md:justify-center md:gap-[16px];
+
+      span {
+        margin-left: 30px;
+        @apply md:ml-0 md:font-black md:text-[32px];
+      }
+    }
+  }
+}
+
+.faq {
+  @apply flex-col px-0;
+
+  .faqItem {
+    @apply p-[32px] bg-white flex-col justify-start flex w-full;
+    @apply md:max-w-[770px] md:w-full;
+
+    .question {
+      @apply font-medium text-xl flex justify-between;
+      @apply md:text-[28px];
+    }
+
+    .answer {
+      @apply justify-start items-center mt-[32px] text-base font-normal;
+      @apply md:text-xl;
+    }
+  }
+}

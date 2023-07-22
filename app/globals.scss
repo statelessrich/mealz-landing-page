@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Roboto font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+
+@layer utilities {
+  // absolute center horizontally and vertically
+  .absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  // zoom on hover
+  .hover-scale {
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  @apply text-[28px] font-black;
+  @apply md:text-5xl;
+}
+
+.section {
+  @apply py-[50px] px-[30px] flex flex-col justify-center items-center;
+  @apply md:flex-row md:py-[80px];
+}
