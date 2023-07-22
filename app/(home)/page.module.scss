@@ -56,7 +56,7 @@
     @apply md:max-w-[770px] md:w-full;
 
     .question {
-      @apply font-medium text-xl flex justify-between;
+      @apply font-medium text-xl flex justify-between items-center;
       @apply md:text-[28px];
     }
 

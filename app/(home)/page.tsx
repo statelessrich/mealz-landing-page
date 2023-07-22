@@ -30,7 +30,7 @@ function Hero() {
 function Download() {
   return (
     <div
-      className={`section ${styles.download} bg-[url('/assets/download-bg.png')] bg-no-repeat bg-contain md:flex-row`}
+      className={`section ${styles.download} bg-[url('/assets/download-bg.png')] bg-no-repeat bg-contain md:flex-row md:bg-[url('/assets/download-bg-desktop.png')]`}
     >
       <div className="row">
         <Image className={styles.phoneIcon} src="/assets/phone.svg" alt="phone" width={109} height={219} />
