@@ -1,0 +1,22 @@
+.faq {
+  @apply flex-col px-0;
+
+  .faqItem {
+    @apply p-[32px] bg-white flex-col justify-start flex w-full;
+    @apply md:max-w-[770px] md:w-full;
+
+    .question {
+      @apply font-medium text-xl flex justify-between items-center;
+      @apply md:text-[28px];
+
+      &:hover {
+        color: #333; // or any darker color
+      }
+    }
+
+    .answer {
+      @apply justify-start items-center mt-[32px] text-base font-normal;
+      @apply md:text-xl;
+    }
+  }
+}
