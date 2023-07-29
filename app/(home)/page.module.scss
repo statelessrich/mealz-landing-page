@@ -1,4 +1,6 @@
 .download {
+  background-color: #F8F8F8;
+  
   // Styles for the md breakpoint size
   @media (min-width: 768px) {
     background-size: 100% 100%;
@@ -21,6 +23,7 @@
   }
 
   .phoneIcon {
+    @apply w-[109px] h-[219px];
     @apply md:w-[218px] md:h-[441px];
   }
 }
