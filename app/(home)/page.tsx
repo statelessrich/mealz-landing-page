@@ -7,9 +7,9 @@ import styles from "./page.module.scss";
 // hero section
 function Hero() {
   return (
-    <div className="hero relative h-[375px] bg-[url('/assets/hero.png')] bg-cover bg-no-repeat md:h-[600px] md:bg-[url('/assets/hero-desktop.png')]">
+    <div className="hero relative h-[357px] bg-[url('/assets/hero.png')] bg-cover bg-no-repeat md:h-[600px] md:bg-[url('/assets/hero-desktop.png')]">
       {/* copy box */}
-      <div className="absolute-center w-[302px] h-[123px] flex justify-center items-center text-center py-[16px] px-[28px] text-[28px] bg-white md:max-w-[878px] md:w-full md:h-[220px]">
+      <div className="bg-[#F8F8F8] absolute-center w-[302px] h-[123px] flex justify-center items-center text-center py-[16px] px-[28px] text-[28px] md:max-w-[878px] md:w-full md:h-[220px]">
         <h1 className="flex items-center justify-center flex-row flex-wrap leading-[61.2px] md:max-w-[450px] md:leading-[85.2px]">
           Your favorite&nbsp;
           <Image
@@ -30,17 +30,17 @@ function Hero() {
 function Download() {
   return (
     <div
-      className={`section ${styles.download} bg-[#F8F8F8] bg-[url('/assets/download-bg.png')] bg-no-repeat bg-contain md:flex-row md:bg-[url('/assets/download-bg-desktop.png')]`}
+      className={`section ${styles.download} bg-[url('/assets/download-bg.png')] bg-no-repeat bg-contain md:flex-row md:bg-[url('/assets/download-bg-desktop.png')]`}
     >
       <div className="row">
-        <Image className={styles.phoneIcon} src="/assets/phone.svg" alt="phone" width={109} height={219} />
+        <Image className={styles.phoneIcon} src="/assets/phone.jpg" alt="phone" width={209} height={319} />
       </div>
 
       <div className="row md:ml-[100px]">
-        <h2 className="mt-[28px] text-center md:mt-0">Download the app</h2>
+        <h2 className="mt-[28px] text-center md:mt-0">Download the App</h2>
 
         {/* app feature list */}
-        <ul className={`${styles.features} mt-[28px] flex flex-col gap-2 md:text-xl`}>
+        <ul className={`${styles.features} mt-[21px] flex flex-col gap-1 md:text-xl`}>
           <li>
             <Image src="/assets/check.svg" alt="check" width={20} height={20} />
             Order now or schedule a delivery time.
