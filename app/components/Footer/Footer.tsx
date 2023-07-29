@@ -149,7 +149,10 @@ function Footer() {
           height={30}
         />
         <div className="text-white text-opacity-90 text-base font-normal leading-normal">
-          ©2022 Mealz | All rights reserved
+          ©2023 Mealz | All rights reserved
+        </div>
+        <div className="text-white text-opacity-90 text-base font-normal leading-normal">
+          Address: 123 Street, City, Country
         </div>
       </div>
     </div>
